@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>浏览页-云驿图片站</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/browser.css">
+</head>
+
+<body>
+<ul class="nav">
+    <li><a href="home.html">首页</a></li>
+    <li><a class="active" href="browser.html">浏览页</a></li>
+    <li><a href="search.html">搜索页</a></li>
+    <div class="dropdown">
+        <a href="" class="dropbtn">
+            <img src="..\img\head.png" width="22" height="22">
+            个人中心</a>
+        <div class="dropdown-content">
+            <a href="upload.html"><img src="..\img\icon\shangchuan.png" width="25" height="25">上传</a>
+            <a href="photo.html">
+                <img src="..\img\icon\tupian.png" width="25" height="25">
+                我的图片</a>
+            <a href="like.html">
+                <img src="..\img\icon\shoucang.png" width="25" height="25">
+                我的收藏</a>
+            <a href="..\index.html">
+                <img src="..\img\icon\denglu-copy.png" width="25" height="25">
+                登入</a>
+        </div>
+    </div>
+</ul>
+
+<div class="leftguide">
+    <ul>
+        <li>标题搜索</li>
+        <li><input type="text" name="searchtitle" class="searchinput"></li>
+        <li>
+            <button>搜索</button>
+        </li>
+        <li>热门国家</li>
+        <div class="hot">
+            <li>
+                <button onclick="alert('已选择')">中国</button>
+            </li>
+            <li>
+                <button onclick="alert('已选择')">英国</button>
+            </li>
+            <li>
+                <button onclick="alert('已选择')">日本</button>
+            </li>
+        </div>
+        <li>热门城市</li>
+        <div class="hot">
+            <li>
+                <button onclick="alert('已选择')">上海</button>
+            </li>
+            <li>
+                <button onclick="alert('已选择')">纽约</button>
+            </li>
+            <li>
+                <button onclick="alert('已选择')">东京</button>
+            </li>
+            <li>
+                <button onclick="alert('已选择')">首尔</button>
+            </li>
+            <li>热门内容</li>
+            <div class="hot">
+                <li>
+                    <button onclick="alert('已选择')">动物</button>
+                </li>
+                <li>
+                    <button onclick="alert('已选择')">人物</button>
+                </li>
+                <li>
+                    <button onclick="alert('已选择')">建筑</button>
+                </li>
+            </div>
+    </ul>
+</div>
+
+<div class="screen">
+    <select id="first" onChange="nextChange()">
+        <option selected="selected">请选择国家</option>
+        <option>中国</option>
+        <option>日本</option>
+        <option>意大利</option>
+        <option>美国</option>
+    </select>
+
+    <select id="second">
+        <option selected="selected">请选择城市</option>
+    </select>
+
+    <button class="circlebtn"><img src="..\img\icon\sousuo.png" width="25" height="25"></button>
+</div>
+
+<script>
+    function nextChange()
+    {
+        var first = document.getElementById("first");
+        var second = document.getElementById("second");
+        second.options.length = 0;
+        if(first.selectedIndex == 1)
+        {
+            second.options.add(new Option("上海"));
+            second.options.add(new Option("北京"));
+            second.options.add(new Option("昆明"));
+            second.options.add(new Option("烟台"));
+        }
+
+        if(first.selectedIndex == 2)
+        {
+            second.options.add(new Option("东京"));
+            second.options.add(new Option("大阪"));
+            second.options.add(new Option("镰仓"));
+        }
+
+        if(first.selectedIndex == 3)
+        {
+            second.options.add(new Option("罗马"));
+            second.options.add(new Option("米兰"));
+            second.options.add(new Option("威尼斯"));
+            second.options.add(new Option("佛罗伦萨"));
+        }
+
+        if(first.selectedIndex == 4)
+        {
+            second.options.add(new Option("纽约"));
+            second.options.add(new Option("旧金山"));
+            second.options.add(new Option("华盛顿"));
+        }
+
+        if(first.selectedIndex == 0)
+        {
+            second.options.add(new Option("请选择"));
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+<p class="line">搜索结果</p>
+
+<div class="result">
+    <table>
+        <tr>
+            <td><a href="introduction.html"><img title="风起云涌" src="..\img\square\square-medium\6114907897.jpg"></a>
+            </td>
+            <td><a href="introduction.html"><img title="风起云涌" src="..\img\square\square-medium\6114907897.jpg"></a>
+            </td>
+            <td><a href="introduction.html"><img title="风起云涌" src="..\img\square\square-medium\6114907897.jpg"></a>
+            </td>
+            <td><a href="introduction.html"><img title="风起云涌" src="..\img\square\square-medium\6114907897.jpg"></a>
+            </td>
+            <td><a href="introduction.html"><img title="风起云涌" src="..\img\square\square-medium\6114907897.jpg"></a>
+            </td>
+            <td><a href="introduction.html"><img title="风起云涌" src="..\img\square\square-medium\6114907897.jpg"></a>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="introduction.html"><img title="风起云涌" src="..\img\square\square-medium\6114907897.jpg"></a>
+            </td>
+            <td><a href="introduction.html"><img title="风起云涌" src="..\img\square\square-medium\6114907897.jpg"></a>
+            </td>
+            <td><a href="introduction.html"><img title="风起云涌" src="..\img\square\square-medium\6114907897.jpg"></a>
+            </td>
+            <td><a href="introduction.html"><img title="风起云涌" src="..\img\square\square-medium\6114907897.jpg"></a>
+            </td>
+            <td><a href="introduction.html"><img title="风起云涌" src="..\img\square\square-medium\6114907897.jpg"></a>
+            </td>
+            <td><a href="introduction.html"><img title="风起云涌" src="..\img\square\square-medium\6114907897.jpg"></a>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="introduction.html"><img title="风起云涌" src="..\img\square\square-medium\6114907897.jpg"></a>
+            </td>
+            <td><a href="introduction.html"><img title="风起云涌" src="..\img\square\square-medium\6114907897.jpg"></a>
+            </td>
+            <td><a href="introduction.html"><img title="风起云涌" src="..\img\square\square-medium\6114907897.jpg"></a>
+            </td>
+            <td><a href="introduction.html"><img title="风起云涌" src="..\img\square\square-medium\6114907897.jpg"></a>
+            </td>
+            <td><a href="introduction.html"><img title="风起云涌" src="..\img\square\square-medium\6114907897.jpg"></a>
+            </td>
+            <td><a href="introduction.html"><img title="风起云涌" src="..\img\square\square-medium\6114907897.jpg"></a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="change">
+    <a href=""><<</a>
+    <a class="now" href="">1</a>
+    <a href="">2</a>
+    <a href="">3</a>
+    <a href="">4</a>
+    <a href="">5</a>
+    <a href="">6</a>
+    <a href="">...</a>
+    <a href="">>></a>
+</div>
+
+<p class="footer">虚空备案号：19302016001</p>
+
+</body>
+</html>
