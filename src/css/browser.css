@@ -162,3 +162,8 @@ body{
 .circlebtn:hover{
     background: #FF8C00;
 }
+
+.footer{
+    position: absolute; 
+    bottom: 0;
+}
